@@ -18,6 +18,7 @@
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
+    "prepare": "npm run build",
     "prebuild": "npm run clean && npm run lint && mkdir dist",
     "build": "npm run build-umd && npm run build-esm",
     "build-esm": "tsc",
